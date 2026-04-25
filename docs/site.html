@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sphere Generator</title>
+        <link rel="stylesheet" href="site.css">
+        <script src="site.js" defer></script>
+    </head>
+    <body>
+        <div id="main-container">
+            <canvas></canvas>
+            <div id="controls">
+                <div class="slider-input">
+                    <label>Size</label>
+                    <input name="size" type="range" min="0" max="100" step="1">
+                    <label>?</label>
+                </div>
+
+                <div class="row-group">
+                    <label>Sphere Color</label>
+                    <div>
+                        <div class="slider-input">
+                            <label>Hue</label>
+                            <input name="color-h" type="range" min="0" max="1" step="0.01">
+                            <label>?</label>
+                        </div>
+                        <div class="slider-input">
+                            <label>Saturation</label>
+                            <input name="color-s" type="range" min="0" max="1" step="0.01">
+                            <label>?</label>
+                        </div>
+                        <div class="slider-input">
+                            <label>Brightness</label>
+                            <input name="color-l" type="range" min="0" max="1" step="0.01">
+                            <label>?</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-group">
+                    <label>Background Color</label>
+                    <div>
+                        <div class="slider-input">
+                            <label>Hue</label>
+                            <input name="background-color-h" type="range" min="0" max="1" step="0.01">
+                            <label>?</label>
+                        </div>
+                        <div class="slider-input">
+                            <label>Saturation</label>
+                            <input name="background-color-s" type="range" min="0" max="1" step="0.01">
+                            <label>?</label>
+                        </div>
+                        <div class="slider-input">
+                            <label>Brightness</label>
+                            <input name="background-color-l" type="range" min="0" max="1" step="0.01">
+                            <label>?</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-group">
+                    <label>Light Direction</label>
+                    <div>
+                        <div class="slider-input">
+                            <label>X-axis</label>
+                            <input name="light-direction-x" type="range" min="-1" max="1" step="0.01">
+                            <label>?</label>
+                        </div>
+                        <div class="slider-input">
+                            <label>Y-axis</label>
+                            <input name="light-direction-y" type="range" min="-1" max="1" step="0.01">
+                            <label>?</label>
+                        </div>
+                        <div class="slider-input">
+                            <label>Z-axis</label>
+                            <input name="light-direction-z" type="range" min="-1" max="1" step="0.01">
+                            <label>?</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-group">
+                    <label>Phong</label>
+                    <div>
+                        <div class="slider-input">
+                            <label>Ambient</label>
+                            <input name="ambient" type="range" min="0" max="5"  step="0.01">
+                            <label>?</label>
+                        </div>
+                        <div class="slider-input">
+                            <label>Diffuse</label>
+                            <input name="diffuse" type="range" min="0" max="10"  step="0.01">
+                            <label>?</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-input">
+                            <label>Specular</label>
+                            <input name="specular" type="range" min="0" max="10" step="0.01">
+                            <label>?</label>
+                        </div>
+                        <div class="slider-input">
+                            <label>Specular Shininess</label>
+                            <input name="specular-shininess" type="range" min="0" max="10" step="0.01">
+                            <label>?</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="save-as-png">
+                    <div>
+                        <label>Resolution</label>
+                        <input name="resolution">
+                    </div>
+                    <button>Save as PNG</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
